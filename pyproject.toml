@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gonini"
+version = "0.1.0"
+description = "Order exception reconciliation agent for a Fulfilment-as-a-Service platform"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [{ name = "gonini" }]
+keywords = ["reconciliation", "fulfilment", "logistics", "operations", "llm"]
+
+# The core (seed / reconcile / digest --no-llm) is pure standard library.
+dependencies = []
+
+[project.optional-dependencies]
+# Only needed for the real LLM path; the demo runs without it.
+llm = ["anthropic>=0.40"]
+
+[project.scripts]
+gonini = "gonini.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["gonini*"]
+
+[tool.setuptools.package-data]
+gonini = ["py.typed"]

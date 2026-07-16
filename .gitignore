@@ -1,0 +1,12 @@
+# Generated artefacts — reproducible from `gonini seed` / `reconcile` / `digest`
+/data/*.csv
+/data/*.db
+/outbox/*.md
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+build/
+dist/
