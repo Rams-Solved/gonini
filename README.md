@@ -1,5 +1,15 @@
 # gonini
 
+**Human ammendmant**
+
+I built this small tool in an evening to show my understanding of the role, not just claim it. It models the daily reconciliation problem described in the job spec: three systems holding different versions of order truth, a deterministic engine that diffs and classifies the exceptions, and an LLM fenced to narration and drafting only. Nothing is sent without human approval.
+This repo is linked in my application.
+Below are two screenshots of the tool in action, including a mistake the LLM made in a root-cause narrative. I have kept it in deliberately: the deterministic owner column beside it is correct, which is exactly why the numbers never come from the model. That boundary is the point of the design.
+
+<img width="1465" height="881" alt="Gonini Demo 1" src="https://github.com/user-attachments/assets/33089823-84e4-40d1-b7c3-7bdaa6e2fb60" />
+<img width="1097" height="558" alt="Gonini Demo 2" src="https://github.com/user-attachments/assets/4a7ab509-65d6-489c-91b1-db3109876743" />
+
+
 **An order exception reconciliation agent for a Fulfilment-as-a-Service platform.**
 
 Every morning a FaaS operation wakes up to three systems that each believe a
