@@ -1,6 +1,6 @@
 # gonini
 
-**Human ammendmant**
+**Why this exists**
 
 I built this small tool in an evening to show my understanding of the role, not just claim it. It models the daily reconciliation problem described in the job spec: three systems holding different versions of order truth, a deterministic engine that diffs and classifies the exceptions, and an LLM fenced to narration and drafting only. Nothing is sent without human approval.
 This repo is linked in my application.
